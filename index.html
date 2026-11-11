@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NET Study — a quiet study Bible for the desktop</title>
+<meta name="description" content="NET Study is a native, fast desktop study Bible reader built on the public NET Bible API. Reference navigation, highlights, notes, offline caching, and instant search over everything you have read.">
+<meta name="theme-color" content="#141019">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-256.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NET Study — a quiet study Bible for the desktop">
+<meta property="og:description" content="Native macOS and Windows study Bible. Reference navigation, highlights, notes, offline cache, instant search.">
+<meta property="og:image" content="assets/icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="NET Study home">
+      <img src="assets/icon-256.png" alt="" width="32" height="32">
+      <span>NET Study</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#reading">Reading</a>
+      <a href="#features">Features</a>
+      <a href="#search">Search</a>
+      <a href="#install">Install</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="ghost-btn" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.4M12 19v2.4M2.6 12h2.4M19 12h2.4M5.4 5.4l1.7 1.7M16.9 16.9l1.7 1.7M18.6 5.4l-1.7 1.7M7.1 16.9l-1.7 1.7"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
+      </button>
+      <a class="btn btn-sm" href="https://github.com/NET-Study" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="gh"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Native desktop app · macOS &amp; Windows</p>
+        <h1>Read slowly.<br><em>Look closer.</em></h1>
+        <p class="lede">A study Bible that gets out of the way. Full reference navigation, highlights and notes right on the page, and instant search across everything you have already read. Built on the public NET Bible API.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://github.com/NET-Study/netstudy-mac/releases/latest/download/NET-Study-1.0.1-arm64.dmg">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="i-dl"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>
+            Download for macOS
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/NET-Study/netstudy-windows/releases/latest/download/NET-Study-Setup-1.0.1-x64.exe">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="i-dl"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg>
+            Download for Windows
+          </a>
+        </div>
+        <p class="meta">Version 1.0.1 <span aria-hidden="true">·</span> ~2.5 MB <span aria-hidden="true">·</span> macOS 14+ on Apple silicon, or Windows 10/11</p>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="icon-halo"></div>
+        <img class="app-icon" src="assets/icon.png" alt="" width="1024" height="1024">
+        <div class="verse-card">
+          <p class="vc-ref">John 3:16 <span class="vc-tag">NET</span></p>
+          <p class="vc-text">“For this is the way God loved the world: He gave his one and only Son…”</p>
+          <div class="vc-tools">
+            <span class="swatch s1"></span><span class="swatch s2"></span><span class="swatch s3"></span><span class="swatch s4"></span><span class="swatch s5"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reading" id="reading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The reading experience</p>
+        <h2>A page that feels like paper</h2>
+        <p class="sub">Warm parchment, real serif type, generous leading. Set the text size, column width, and appearance once and the app stays quiet.</p>
+      </div>
+      <figure class="shot reveal">
+        <div class="shot-frame">
+          <img src="assets/app.png" alt="The NET Study reader showing John 1, with the book and chapter navigator in the sidebar." width="1240" height="830" loading="lazy">
+        </div>
+        <figcaption>John 1 in the reader. Reference navigation, chapter grid, and a warm reading surface.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What it does</p>
+        <h2>Everything for study,<br>nothing for distraction</h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h6a2 2 0 0 1 2 2V20a2.5 2.5 0 0 0-2-1H4zM20 4.5h-6a2 2 0 0 0-2 2V20a2.5 2.5 0 0 1 2-1h6z"/></svg></span>
+          <h3>Reference navigation</h3>
+          <p>All 66 books with chapter grids, plus a “Go to” field that understands <code>John 3:16</code>, <code>rom 8:28-39</code>, <code>Ps 23</code>, and semicolon lists.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+          <h3>Read your way</h3>
+          <p>Serif or sans, adjustable size and measure, light, dark, or system appearance, with line spacing that lets a paragraph breathe.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 20 4.5-1 9-9a2.1 2.1 0 0 0-3-3l-9 9zM13.5 6.5l3 3"/></svg></span>
+          <h3>Highlight and note</h3>
+          <p>Click a verse number to highlight in five colors, bookmark it, copy with the reference, or write a note that lives beside the text.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v10M12 4a4 4 0 0 0 0 0 4 4 0 0 0 0 0"/><path d="M6 8H4v11h16V8h-2"/><circle cx="12" cy="6" r="2.4"/></svg></span>
+          <h3>Saved &amp; notes</h3>
+          <p>Bookmarks and study notes collect in the sidebar and jump straight back to the passage, so a thread of thought is never lost.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 1 1 .9-7.9A5.5 5.5 0 0 1 18.6 11 3.5 3.5 0 0 1 18 18z"/></svg></span>
+          <h3>Works offline</h3>
+          <p>Every passage you open is cached to disk. Your recent readings and searches still work on a plane, a train, or a bad hotel Wi-Fi.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>
+          <h3>Verse of the Day</h3>
+          <p>Not sure where to land? Open a verse chosen for the day, or pull a random passage and start reading.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="search" id="search">
+    <div class="wrap search-grid">
+      <div class="reveal">
+        <p class="eyebrow">Search</p>
+        <h2>Finds what you have read, instantly</h2>
+        <p class="sub">Type three or more characters that are not a reference and the app searches every cached passage. All words must match, case and accents are ignored. Arrow keys move through results; Return opens the verse and scrolls to it.</p>
+        <ul class="ticks">
+          <li>Nothing is sent to the network</li>
+          <li>Results show a snippet around each hit</li>
+          <li>Search still works offline</li>
+        </ul>
+      </div>
+      <div class="search-demo reveal" aria-hidden="true">
+        <div class="demo-bar">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <span class="demo-query">shepherd</span><span class="caret"></span>
+        </div>
+        <ul class="demo-results">
+          <li class="is-active"><span class="dr-ref">Psalms 23:1</span><span class="dr-snip">The Lord is my <mark>shepherd</mark>, I lack nothing.</span></li>
+          <li><span class="dr-ref">John 10:11</span><span class="dr-snip">I am the good <mark>shepherd</mark>. The good shepherd…</span></li>
+          <li><span class="dr-ref">Isaiah 40:11</span><span class="dr-snip">Like a <mark>shepherd</mark> he cares for his flock…</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="install" id="install">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Install</p>
+        <h2>Two clicks, then a lifetime of reading</h2>
+      </div>
+      <div class="install-grid">
+        <article class="panel reveal">
+          <div class="panel-head">
+            <h3>macOS</h3>
+            <span class="badge">Apple silicon</span>
+          </div>
+          <ol class="steps">
+            <li>Download the <strong>.dmg</strong> and open it.</li>
+            <li>Drag <strong>NET Study</strong> into Applications.</li>
+            <li>First launch: <strong>right-click → Open</strong>.</li>
+          </ol>
+          <p class="fine">The app is ad-hoc signed, not notarized, so Gatekeeper asks once. No luck? Clear the flag:</p>
+          <div class="code">
+            <code>xattr -dr com.apple.quarantine "/Applications/NET Study.app"</code>
+            <button class="copy" type="button" data-copy='xattr -dr com.apple.quarantine "/Applications/NET Study.app"'>Copy</button>
+          </div>
+          <p class="fine">Requires macOS 14 or later on an M1 or newer. There is no Intel build. Prefer to compile it? <code>./build.sh</code> produces an app with no quarantine prompt.</p>
+          <a class="btn btn-primary btn-block" href="https://github.com/NET-Study/netstudy-mac/releases/latest/download/NET-Study-1.0.1-arm64.dmg">Download .dmg</a>
+          <a class="link-quiet" href="https://github.com/NET-Study/netstudy-mac" target="_blank" rel="noopener">Source on GitHub →</a>
+        </article>
+
+        <article class="panel reveal">
+          <div class="panel-head">
+            <h3>Windows</h3>
+            <span class="badge">10 &amp; 11</span>
+          </div>
+          <ol class="steps">
+            <li>Download the <strong>Setup .exe</strong>.</li>
+            <li>Run it and follow the installer.</li>
+            <li>Launch from the Start menu.</li>
+          </ol>
+          <p class="fine">The installer is unsigned, so SmartScreen may warn you the first time. Choose <strong>More info → Run anyway</strong>.</p>
+          <div class="code">
+            <code>Get-FileHash .\NET-Study-Setup-1.0.1-x64.exe -Algorithm SHA256</code>
+            <button class="copy" type="button" data-copy="Get-FileHash .\NET-Study-Setup-1.0.1-x64.exe -Algorithm SHA256">Copy</button>
+          </div>
+          <p class="fine">No admin rights required. A portable build exists but is not published, since antivirus engines flag it.</p>
+          <a class="btn btn-primary btn-block" href="https://github.com/NET-Study/netstudy-windows/releases/latest/download/NET-Study-Setup-1.0.1-x64.exe">Download .exe</a>
+          <a class="link-quiet" href="https://github.com/NET-Study/netstudy-windows" target="_blank" rel="noopener">Source on GitHub →</a>
+        </article>
+      </div>
+
+      <div class="keys reveal">
+        <div class="keys-copy">
+          <h3>Keyboard first</h3>
+          <p>Everything reachable without lifting your hands.</p>
+        </div>
+        <dl class="keymap">
+          <div><dt><kbd>⌘</kbd><kbd>F</kbd></dt><dd>Focus the reference field</dd></div>
+          <div><dt><kbd>⌘</kbd><kbd>D</kbd></dt><dd>Verse of the Day</dd></div>
+          <div><dt><kbd>⌘</kbd><kbd>R</kbd></dt><dd>Random passage</dd></div>
+          <div><dt><kbd>↑</kbd><kbd>↓</kbd></dt><dd>Move through search results</dd></div>
+          <div><dt><kbd>↵</kbd></dt><dd>Open the selected verse</dd></div>
+          <div><dt><kbd>esc</kbd></dt><dd>Dismiss results</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="soon">
+    <div class="wrap soon-card reveal">
+      <p class="eyebrow">Coming soon</p>
+      <h2>Official study notes, from the NET API</h2>
+      <p>Translator’s notes and study notes are on the way, sitting quietly beside the text where they belong. Until then, everything you highlight and write is yours, stored locally.</p>
+      <a class="btn btn-ghost" href="https://github.com/NET-Study" target="_blank" rel="noopener">Follow the org on GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/icon-256.png" alt="" width="28" height="28">
+      <div>
+        <p class="foot-name">NET Study</p>
+        <p class="foot-note">A quiet study Bible for the desktop.</p>
+      </div>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="https://github.com/NET-Study" target="_blank" rel="noopener">Org</a>
+      <a href="https://github.com/NET-Study/netstudy-mac" target="_blank" rel="noopener">macOS</a>
+      <a href="https://github.com/NET-Study/netstudy-windows" target="_blank" rel="noopener">Windows</a>
+      <a href="https://labs.bible.org/api/" target="_blank" rel="noopener">NET Bible API</a>
+    </nav>
+  </div>
+  <div class="wrap foot-fine">
+    <p>Scripture text from the NET Bible®, courtesy of bible.org. This reader is an independent project and is not affiliated with bible.org.</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
