@@ -1,6 +1,6 @@
 # NET-Study.github.io
 
-The landing page for **NET Study**, a quiet study Bible for macOS and Windows.
+The landing page for **NET Study**, a quiet study Bible for macOS, Windows and Linux.
 
 - Live at <https://net-study.github.io>
 - macOS app: <https://github.com/NET-Study/netstudy-mac>
