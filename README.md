@@ -5,6 +5,8 @@ The landing page for **NET Study**, a quiet study Bible for macOS, Windows and L
 - Live at <https://net-study.github.io>
 - macOS app: <https://github.com/NET-Study/netstudy-mac>
 - Windows app: <https://github.com/NET-Study/netstudy-windows>
+- Synopsis: <https://github.com/NET-Study/netstudy-synopsis>
+- Sermons: <https://github.com/NET-Study/netstudy-sermons>
 
 Plain HTML, CSS, and a small vanilla JS file. No build step, no dependencies.
 Push to `main` and GitHub Pages serves it.
